@@ -6,6 +6,7 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './app-highlight.directive';
+import { AppNotDirective } from './app-not.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HighlightDirective } from './app-highlight.directive';
     ParentComponentComponent,
     ChildComponentComponent,
     HighlightDirective,
+    AppNotDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

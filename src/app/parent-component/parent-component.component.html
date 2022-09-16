@@ -1,4 +1,6 @@
 <h1>Parent Component</h1>
+<h2 *appNot="true">True</h2>
+<h2 *appNot="false">False</h2>
 <button (click)="toggleChild()">Toggle child</button>
 <input type="text" [(ngModel)]="channelName" />
 <app-child-component *ngIf="isChild" [channelName]="channelName"
