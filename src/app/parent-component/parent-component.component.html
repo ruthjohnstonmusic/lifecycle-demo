@@ -1,3 +1,6 @@
 <h1>Parent Component</h1>
 <button (click)="toggleChild()">Toggle child</button>
-<app-child-component *ngIf="child"></app-child-component>
+<input type="text" [(ngModel)]="channelName" />
+<app-child-component *ngIf="isChild" [channelName]="channelName"
+  ><h2 #projectedContent>This is projected content</h2></app-child-component
+>

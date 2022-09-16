@@ -4,17 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ParentComponentComponent } from './parent-component/parent-component.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './app-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponentComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    HighlightDirective,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
